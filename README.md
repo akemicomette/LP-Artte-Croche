@@ -1,5 +1,2 @@
-# Iniciativa +PraTI
-
-<hr/>
-
-Repositório do curso para Desenvolvedor Full Stack Jr. pelo Codifica através da iniciativa +praTI.
+# LP-Artte-Croche
+Um projeto web para venda de peças em crochê, e compartilhar conhecimento sobre crochê
