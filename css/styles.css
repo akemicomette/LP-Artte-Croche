@@ -29,14 +29,13 @@ body {
 
 .site-name {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .site-name--title {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
   text-decoration: none;
   display: inline-block;
 }
@@ -55,10 +54,19 @@ ul {
 
 .menu-a {
   font-size: 1.2rem;
-  font-weight: var(--normal-font);
-  color: var(--primary-color);
+  font-weight: var(--bold-font);
+  color: var(--text-color);
   align-content: center;
   text-decoration: none;
+}
+
+.introduction {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--normal-font);
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 0.5rem 14rem 1.5rem 14rem;
+  text-align: justify;
 }
 
 .search-container{
@@ -73,8 +81,9 @@ ul {
   height: 2.5rem;
   padding: 0.5rem;
   font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--background-color);
-  border: 1px solid var(--secondary-color);
+  border: 0.05rem solid var(--secondary-color);
   border-radius: 1rem;
   outline: none;
   &:focus{
@@ -109,6 +118,18 @@ ul {
 .banner img {
   width: 100%;
   padding: 0.1rem;
+}
+
+.name-carousel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--line-height);
+  font-weight: var(--bold-font);
+  color: white;
+  margin: 2rem 20rem;
+  text-align: center;
+  border: 0.15rem solid var(--secondary-color);
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
 }
 
 .carousel {
