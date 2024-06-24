@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
 
 :root {
     --normal-font: 500;
@@ -29,6 +30,7 @@ body {
 
 .site-name {
   text-decoration: none;
+  background: radial-gradient(#6290C8, #829CBC);
   color: var(--text-color);
 }
 
@@ -60,13 +62,27 @@ ul {
   text-decoration: none;
 }
 
-.introduction {
+.btn-buy {
   font-family: 'Montserrat', sans-serif;
-  font-weight: var(--normal-font);
+  font-weight: var(--bold-font);
   font-size: 1rem;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  background-color: var(--primary-color);
+  padding: 0.7rem;
+  display: inline-block;
+  margin-left: 12rem;;
+  vertical-align: 0.7rem;
+}
+
+.introduction {
+  font-family: "Playwrite ES", cursive;
+  font-weight: var(--normal-font);
+  font-size: 1.3rem;
   color: var(--text-color);
-  padding: 0.5rem 14rem 1.5rem 14rem;
-  text-align: justify;
+  padding: 0.5rem 10rem 1.5rem 14rem;
+  text-align: center;
 }
 
 .search-container{
@@ -164,7 +180,7 @@ ul {
 
 button {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   padding: 0.7rem;
   cursor: pointer;

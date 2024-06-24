@@ -21,5 +21,5 @@ document.querySelector('.prev-btn').addEventListener('click', () => {
 });
 
 function updateCarousel() {
-    carouselImages.style.left = `${-currentIndex * 30}%`;
+    carouselImages.style.left = `${-currentIndex * 20}%`;
 }
