@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <header>
-    <nav class="menu">
+  <header class="menu">
+    <nav class="container">
       <h1 class="site-name--title">
         <a href="#" class="site-name">
           ARTTE
@@ -16,24 +16,18 @@
 
       </h1>
       <ul>
-        <li class="menu-link"><a href="#" class="menu-a" href="#">Pagina Inicial</a></li>
-        <li class="menu-link"><a href="#" class="menu-a" href="#">Inspiracoes</a></li>
-        <li class="menu-link"><a href="#" class="menu-a" href="#">Encomendas</a></li>
-        <li class="menu-link"><a href="#" class="menu-a" href="#">Contato</a></li>
+        <li class="menu-link"><a href="#" class="menu-ancor" >Pagina Inicial</a></li>
+        <li class="menu-link"><a href="#order" class="menu-ancor" >Encomendas</a></li>
+        <li class="menu-link"><a href="#inspiration" class="menu-ancor" >Inspiracoes</a></li>
+        <li class="menu-link"><a href="#contact" class="menu-ancor" >Contato</a></li>
       </ul>
 
-      <a href='https://www.elo7.com.br/lista/croche?sort=relevance&pgn=1' class="btn-buy">Peças Disponíveis</a>
+      <a href='https://www.elo7.com.br/handmadecrochee' class="btn-buy">Peças Disponíveis</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <div class="introduction">
-        Bem-vindo ao mundo do crochê!
-      </div>
-    </section>
-
-    <section> 
+    <section class="container"> 
       <div class="search">
         <form class="search-container">
           <input type="text" id="search-bar" placeholder="Busca..."/>
@@ -42,77 +36,109 @@
       </div>
     </section>
 
+    <section class="container">
+      <div class="introduction">
+        Bem-vindo ao mundo do crochê!
+      </div>
+    </section>
+
     <section class="banner">
       <img src="/assets/img/banner.jpeg" alt="Croche e agulha">
     </section>
 
-    <section class="carousel">
-      <div class="name-carousel">Sob Encomenda</div>
-      <div class="carousel-turn">
-        <div class="carousel-images">
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img01.jpg" alt="fronha decorada">
+    <section id="order" class="order-carousel">
+      <div class="order-name-carousel">Sob Encomenda</div>
+      <div class="order-carousel-turn">
+        <div class="order-carousel-images">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img02.jpg" alt="cropped">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img02.jpg" alt="apoio de copo que forma uma flor">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img06.jpg" alt="mochila colorida">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img03.jpg" alt="apoio de copo com girassois">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img07.jpg" alt="puff">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img06.jpg" alt="tapete">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img01.jpg" alt="vestido de bebê">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/cloths/img01.jpg" alt="blusa">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img09.jpg" alt="biquini">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/cloths/img03.jpg" alt="blusa">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img04.jpg" alt="conjunto cropped e short">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/cloths/img04.jpg" alt="vestido">
+          <div class="order-img-intro">
+            <img class="order-img-carousel" src="/assets/img/orders/img08.jpg" alt="sapatinho">
           </div>
         </div>
       </div>
-      <button class="prev-btn"><</button>
-      <button class="next-btn">></button>
+      <button class="order-prev-btn"><</button>
+      <button class="order-next-btn">></button>
     </section>
 
-    <section class="carousel">
-      <div class="name-carousel">Inspiracoes</div>
-      <div class="carousel-turn">
-        <div class="carousel-images">
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img01.jpg" alt="fronha decorada">
+    <section id="inspiration" class="inspiration-carousel">
+      <div class="inspiration-name-carousel">Inspiracoes</div>
+      <div class="inspiration-carousel-turn">
+        <div class="inspiration-carousel-images">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/home/img01.jpg" alt="fronha decorada">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img02.jpg" alt="apoio de copo que forma uma flor">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/home/img02.jpg" alt="apoio de copo que forma uma flor">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img03.jpg" alt="apoio de copo com girassois">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/home/img03.jpg" alt="apoio de copo com girassois">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/home/img06.jpg" alt="tapete">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/home/img06.jpg" alt="tapete">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/cloths/img01.jpg" alt="blusa">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/cloths/img01.jpg" alt="blusa">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/cloths/img03.jpg" alt="blusa">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/cloths/img03.jpg" alt="blusa">
           </div>
-          <div class="img-intro">
-            <img class="img-carousel" src="/assets/img/cloths/img04.jpg" alt="vestido">
+          <div class="inspiration-img-intro">
+            <img class="inspiration-img-carousel" src="/assets/img/cloths/img04.jpg" alt="vestido">
           </div>
         </div>
       </div>
-      <button class="prev-btn"><</button>
-      <button class="next-btn">></button>
+      <button class="inspiration-prev-btn"><</button>
+      <button class="inspiration-next-btn">></button>
     </section>
+
+    <section id="contact" class="contact-container">
+      <div class="contact-form container">
+        <div class="contact-container-name">Contato</div>
+        <input type="text" id="contact-name-bar" placeholder="Nome"/>
+        <input type="tel" id="contact-phone-bar" placeholder="(DDD) 9 1234-5678" />
+        <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required -->
+        <textarea  id="contact-message-bar" placeholder="Digite sua mensagem"></textarea>
+        <button class="send-btn">Enviar</button>
+      </div>
+
+    </section>
+
   </main>
 
   <footer>
-    <section class="">
-      <div>
-        
+    <section class="container">
+    <div class="left-footer">
+      <div class="name-dedication">Dedicatória</div>
+      <div class="text-dedication">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi soluta mollitia ex officia dolorem repudiandae vitae expedita reiciendis, nihil praesentium.
+      </div>
+    </div>
+
+    <div class="right-footer">
+      <div class="handy-links-name">Links úteis</div>
+        <ul class="handy-links-list">
+          <li class="handy-list"><a class="handy-links" href="#">Pagina Inicial</a></li>
+          <li class="handy-list"><a class="handy-links" href="#order">Encomendas</a></li>
+          <li class="handy-list"><a class="handy-links" href="#inspiration">Inspirações</a></li>
+          <li class="handy-list"><a class="handy-links" href="#contact">Contato</a></li>
+        </ul>
       </div>
     </section>
   </footer>
