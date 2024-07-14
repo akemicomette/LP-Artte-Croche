@@ -9,7 +9,7 @@
     --primary-color: #1F487E;
     --secondary-color: #376996;
     --tertiary-color: #6290C8;
-    --background-color: #829CBC;
+    --background-color: #bbc8d7;
     --text-color: #1D3461;
     --text-white: rgb(215, 215, 215);
 }
@@ -40,6 +40,12 @@ main {
 
 /*HEADER*/
 
+.container {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-around;
+}
+
 .menu {
   padding: 1rem;
   position: fixed;
@@ -59,24 +65,26 @@ main {
   font-size: 3rem;
   font-weight: var(--bold-font);
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
-  display: inline-block;
+  display: flex;
   vertical-align: top;
   margin-left: 2rem;
 }
 
 .menu-link {
   font-family: 'Montserrat', sans-serif;
-  display: inline-block;
+  flex-direction: row;
   margin: 1rem;
+  list-style-type: none;
 }
 
 .menu-ancor {
   font-size: 1.2rem;
-  /* font-weight: var(--bold-font); */
+  font-weight: var(--bold-font);
   color: var(--text-white);
   align-content: center;
   text-decoration: none;
@@ -92,25 +100,19 @@ ul {
   border: 0.1rem var(--text-white) solid;
   background-color: var(--secondary-color);
   padding: 1rem;
-  float: right;
-  vertical-align: 0.7rem;
 }
 
 
 /*INTRODUÇÃO - BARRA DE PESQUISA - BANNER*/
 
-.introduction {
-  font-family: "Playwrite ES", cursive;
-  font-weight: var(--normal-font);
-  font-size: 1.8rem;
-  color: var(--text-color);
-  padding: 0.5rem 10rem 1.5rem 14rem;
-  text-align: center;
+
+.srch-container{
+  padding: 1.5rem;
 }
 
 .search-container{
-  display: block;
   margin: 1rem auto;
+  width: 80%;
 }
 
 #search-bar{
@@ -146,6 +148,7 @@ ul {
  .search-outline {
   position: relative;
   float: right;
+  display: flex;
   width: 1.5rem;
   height: 1.5rem;
   color: var(--primary-color);
@@ -153,20 +156,28 @@ ul {
   right: 15px;
 }
 
+.introduction {
+  font-family: "Playwrite ES", cursive;
+  font-weight: var(--normal-font);
+  font-size: 1.8rem;
+  color: var(--text-color);
+  padding: 0.5rem 10rem 1.5rem 14rem;
+  text-align: center;
+}
+
 .banner img {
   width: 100%;
   padding: 0.1rem;
 }
 
-
-
 /* CARROSSEL ENCOMENDAS*/
 
 .order-name-carousel {
   font-family: 'Montserrat', sans-serif;
-  font-size: var(--line-height);
+  font-size: 1.5rem;
   font-weight: var(--bold-font);
   color: var(--text-white);
+  justify-self: center;
   margin: 2rem 20rem;
   text-align: center;
   border: 0.15rem solid var(--secondary-color);
@@ -176,7 +187,8 @@ ul {
 }
 
 .order-carousel {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 80%;
   margin: 20px auto;
   overflow: hidden;
@@ -206,9 +218,8 @@ ul {
 }
 
 .order-prev-btn, .order-next-btn {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   cursor: pointer;
   color: var(--text-white);
@@ -216,6 +227,7 @@ ul {
   border-radius: 0.5rem;
   border: none;
   height: 4rem;
+  width: 1.5rem;
   font-weight: var(--bolder-font);
   font-size: 1rem;
 }
@@ -299,9 +311,10 @@ ul {
 /*CONTATO*/
 
 .contact-container{
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  background-color: var(--text-white);
+  background-color: white;
   width: 100%;
   padding-block: 2rem;
 }
@@ -414,7 +427,6 @@ ul {
   border-radius: 0.7rem;
   background-color: var(--primary-color);
   padding: 0.7rem;
-  vertical-align: top;
   height: 10rem;
   width: 25%;
 }
