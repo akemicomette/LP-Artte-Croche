@@ -1,0 +1,74 @@
+/*CARROSSEL INPIRAÇÕES*/
+
+.inspiration-name-carousel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: var(--bold-font);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: 2rem 20rem;
+  border: 0.15rem solid var(--secondary-color);
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.inspiration-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.inspiration-carousel-turn {
+  width: 90%;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.inspiration-carousel-images {
+  width: 300%;
+  position: relative;
+  left: 0;
+}
+
+.inspiration-img-intro {
+  float: left;
+  margin-inline: 0.2rem;
+}
+
+.inspiration-img-carousel {
+  width: 20rem;
+  height: 22rem;
+}
+
+.inspiration-prev-btn, .inspiration-next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  color: var(--text-white);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  border: none;
+  height: 4rem;
+  width: 1.5rem;
+  font-weight: var(--bolder-font);
+  font-size: 1rem;
+}
+
+.inspiration-prev-btn {
+  left: 0.5rem;
+}
+
+.inspiration-next-btn {
+  right: 0.5rem;
+}
