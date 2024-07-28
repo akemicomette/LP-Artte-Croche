@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artte Crochê</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="carouselOrder.css">
-  <link rel="stylesheet" href="carouselInspo.css">
-  <link rel="stylesheet" href="contact.css">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./assets/src/styles.css">
+  <link rel="stylesheet" href="./assets/src/carouselOrder.css">
+  <link rel="stylesheet" href="./assets/src/carouselInspo.css">
+  <link rel="stylesheet" href="./assets/src/contact.css">
+  <link rel="stylesheet" href="./assets/src/responsive.css">
 </head>
 <body>
   <header class="menu">
@@ -17,13 +18,15 @@
         <a href="#" class="site-name">
           ARTTE
         </a>
-
+        
       </h1>
-      <ul>
+      <span id="burguer" class="material-symbols-rounded" onclick="clickMenu(menu_bg)">menu</span>
+      <ul id="menu_bg" class="menu-bg">
         <li class="menu-link"><a href="#" class="menu-ancor" >Pagina Inicial</a></li>
         <li class="menu-link"><a href="#order" class="menu-ancor" >Encomendas</a></li>
         <li class="menu-link"><a href="#inspiration" class="menu-ancor" >Inspiracoes</a></li>
         <li class="menu-link"><a href="#contact" class="menu-ancor" >Contato</a></li>
+        <li class="menu-link-buy"><a href="https://www.elo7.com.br/handmadecrochee" class="menu-ancor">Peças Disponíveis</a></li>
       </ul>
 
       <a href='https://www.elo7.com.br/handmadecrochee' class="btn-buy">Peças Disponíveis</a>
@@ -141,6 +144,7 @@
           <li class="handy-list"><a class="handy-links" href="#order">Encomendas</a></li>
           <li class="handy-list"><a class="handy-links" href="#inspiration">Inspirações</a></li>
           <li class="handy-list"><a class="handy-links" href="#contact">Contato</a></li>
+          <li class="handy-list"><a class="handy-links" href="https://www.elo7.com.br/handmadecrochee">Compre aqui</a></li>
         </ul>
       </div>
     </section>

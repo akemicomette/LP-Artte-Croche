@@ -1,4 +1,3 @@
-
 function moveCarousel(containerClass, nextButtonClass, prevButtonClass, imagesClass) {
 
     const orderImages = document.querySelector(containerClass);
@@ -28,5 +27,14 @@ function moveCarousel(containerClass, nextButtonClass, prevButtonClass, imagesCl
     }
 }
 
+function clickMenu(menu) {
+    if(menu.style.display == 'block'){
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+
 moveCarousel('.order-carousel-images','.order-next-btn','.order-prev-btn','.order-img-intro');
 moveCarousel('.inspiration-carousel-images','.inspiration-next-btn','.inspiration-prev-btn','.inspiration-img-intro');
+clickMenu();

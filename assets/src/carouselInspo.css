@@ -11,9 +11,9 @@
   text-align: center;
   width: 50%;
   margin: 2rem 20rem;
-  border: 0.15rem solid var(--secondary-color);
+  border: 0.15rem solid var(--background-color);
   border-radius: 0.5rem;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 0.5rem;
 }
 
@@ -56,7 +56,7 @@
   padding: 1rem;
   cursor: pointer;
   color: var(--text-white);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 0.5rem;
   border: none;
   height: 4rem;

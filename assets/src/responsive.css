@@ -1,0 +1,47 @@
+@media (max-width:1500px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #burguer{
+    font-size: 2.2rem;
+    color: var(--text-white);
+    padding: 0.7rem;
+    display: grid;
+    align-items: center;
+  }
+  
+  #burguer:hover{
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .btn-buy {
+    display: none;
+  }
+  
+  .menu-bg {
+    display: none;
+  }
+
+  .menu-link {
+    display: flex;
+  }
+
+  .menu-link-buy {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    margin: 1rem;
+    list-style-type: none;
+  }
+  
+} 
+  
+  @media (min-width:900px) {
+  
+} 
+  @media screen and (min-width:600px) { } 
+  @media screen and (min-width:768px) { } 

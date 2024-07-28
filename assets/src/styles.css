@@ -7,12 +7,12 @@
     --bold-font: 700;
     --bolder-font: 900;
     --line-height: 1.5rem;
-    --primary-color: #1F487E;
-    --secondary-color: #376996;
-    --tertiary-color: #6290C8;
-    --background-color: #bbc8d7;
-    --text-color: #1D3461;
-    --text-white: rgb(215, 215, 215);
+    --primary-color: #9879ab;
+    --contrast-color: #4f2e5d;
+    --secondary-color: #debaed;
+    --background-color: #f1eeee;
+    --text-color: #4f2e5d;
+    --text-white: #f8f8f8;
 }
 
 * {
@@ -50,7 +50,7 @@ main {
   background-color: var(--primary-color);
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 80;
 }
 
 .site-name {
@@ -67,10 +67,14 @@ main {
   flex-direction: row;
 }
 
-ul {
+.menu-bg {
   display: flex;
   vertical-align: top;
   margin-left: 2rem;
+}
+
+#burguer {
+  display:none;
 }
 
 .menu-link {
@@ -96,8 +100,12 @@ ul {
   text-decoration: none;
   border-radius: 0.7rem;
   border: 0.1rem var(--text-white) solid;
-  background-color: var(--secondary-color);
+  background-color: var(--contrast-color);
   padding: 1rem;
+}
+
+.menu-link-buy {
+  display: none;
 }
 
 
@@ -125,7 +133,7 @@ ul {
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--text-white);
-  border: 0.05rem solid var(--secondary-color);
+  border: 0.05rem solid var(--contrast-color);
   border-radius: 1rem;
   outline: none;
   &:focus{
@@ -185,12 +193,14 @@ footer {
   width: 80%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: var(--text-white);
+  margin-left: 0;
 }
 
 .name-dedication {
   font-family: "Emilys Candy";
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: var(--bold-font);
   width: 70%;
   align-items: left;
@@ -237,16 +247,3 @@ footer {
   text-decoration: none;
   padding: 0.2rem;
 }
-
-
-@media screen and (min-width:320px) {
-
-
-
- } 
-@media screen and (min-width:480px) {
-
- } 
-@media screen and (min-width:600px) { } 
-@media screen and (min-width:768px) { } 
-@media screen and (min-width:992px) { }
