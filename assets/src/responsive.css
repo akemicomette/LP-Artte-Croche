@@ -1,4 +1,4 @@
-@media (max-width:1500px) {
+/*@media (max-width:1500px) {
   .container {
     display: flex;
     justify-content: space-between;
@@ -38,10 +38,25 @@
     list-style-type: none;
   }
   
-} 
+} */
   
-  @media (min-width:900px) {
-  
-} 
-  @media screen and (min-width:600px) { } 
-  @media screen and (min-width:768px) { } 
+@media screen and (min-width:576px) {
+  .carousel-inner {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  }
+
+  .card {
+    margin: 0 0.5rem;
+  }
+
+  .img-wrapper {
+    height: 18rem;
+  }
+}

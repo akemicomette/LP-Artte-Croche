@@ -1,5 +1,4 @@
 function moveCarousel(containerClass, nextButtonClass, prevButtonClass, imagesClass) {
-
     const orderImages = document.querySelector(containerClass);
     const ordersCount = document.querySelectorAll(imagesClass).length;
     let ordersCurrentIndex = 0;
@@ -27,7 +26,8 @@ function moveCarousel(containerClass, nextButtonClass, prevButtonClass, imagesCl
     }
 }
 
-function clickMenu(menu) {
+function clickMenu() {
+    const menu = document.querySelector('#menu_bg');
     if(menu.style.display == 'block'){
         menu.style.display = 'none';
     } else {
@@ -35,6 +35,5 @@ function clickMenu(menu) {
     }
 }
 
-moveCarousel('.order-carousel-images','.order-next-btn','.order-prev-btn','.order-img-intro');
 moveCarousel('.inspiration-carousel-images','.inspiration-next-btn','.inspiration-prev-btn','.inspiration-img-intro');
-clickMenu();
+// clickMenu();
