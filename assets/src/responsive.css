@@ -1,46 +1,157 @@
-/*@media (max-width:1500px) {
-  .container {
+@media screen and (max-width:575.98px) {
+  #burguer {
     display: flex;
-    justify-content: space-between;
-  }
-  
-  #burguer{
-    font-size: 2.2rem;
-    color: var(--text-white);
-    padding: 0.7rem;
-    display: grid;
-    align-items: center;
-  }
-  
-  #burguer:hover{
-    cursor: pointer;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  .btn-buy {
-    display: none;
-  }
-  
-  .menu-bg {
-    display: none;
-  }
-
-  .menu-link {
-    display: flex;
+    align-self: center;
+    color: var(--text-white)
   }
 
   .menu-link-buy {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    flex-direction: row;
-    margin: 1rem;
-    list-style-type: none;
+  }
+
+  .btn-buy, .menu-bg {
+    display: none;
+  }
+
+  #search-bar{
+    width: 100%;
+    height: 2rem;
+  }
+
+  .search-outline {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: -25px;
+    right: 15px;
+  }
+
+  .introduction {
+    font-size: 1rem;
+  }
+
+  .banner img {
+    margin: 0 auto;
+  }
+
+  .order-name-carousel, .inspiration-name-carousel, .contact-container-name, .title-feedback, .received-feedbacks {
+    font-size: 1rem;
+    width: 45%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem calc(80% / 3);
+  }
+
+  .img-wrapper {
+    height: 8rem;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    height: 2rem;
+    width: 1rem;
+  }
+
+  .send-btn {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    width: 30%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .feedback-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #feedback-form {
+    flex-direction: column;
+  }
+
+  #feedback-input, #feedback-name-bar {
+    width: 100%;
+  }
+
+  .add-btn {
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    height: 20%;
+  }
+
+  footer, .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-footer {
+    margin: 0 0 2rem 0;
+    align-items: center;
   }
   
-} */
+  .name-dedication {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
   
-@media screen and (min-width:576px) {
+  .text-dedication {
+    font-size: 0.8rem;
+  }
+
+  .right-footer {
+    width: 80%;
+    margin: 0.5rem auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem 0.5rem 0 0;
+  }
+  
+  .handy-links-name {
+    font-size: 1.5rem;
+    align-content: center;
+  }
+  
+  .handy-links-list {
+    font-size: 0.8rem;
+  }
+  
+}
+
+
+@media screen and (min-width:576px) and (max-width: 767.98px) {
+  #burguer {
+    display: flex;
+    align-self: center;
+    color: var(--text-white)
+  }
+
+  .menu-link-buy {
+    display: flex;
+  }
+
+  .btn-buy, .menu-bg {
+    display: none;
+  }
+
+  #search-bar{
+    width: 100%;
+    height: 2rem;
+  }
+
+  .search-outline {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: -25px;
+    right: 15px;
+  }
+
+  .introduction {
+    font-size: 1rem;
+  }
+
+  .banner img {
+    margin: 0 auto;
+  }
+  
   .carousel-inner {
     display: flex;
     padding: 1rem;
@@ -56,7 +167,295 @@
     margin: 0 0.5rem;
   }
 
+  .order-name-carousel, .inspiration-name-carousel, .contact-container-name, .title-feedback, .received-feedbacks {
+    font-size: 1rem;
+    width: 45%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem calc(80% / 3);
+  }
+
   .img-wrapper {
-    height: 18rem;
+    height: 12rem;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    height: 3rem;
+    width: 1.5rem;
+  }
+
+  .send-btn {
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 10%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .feedback-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #feedback-form {
+    flex-direction: column;
+  }
+
+  #feedback-input, #feedback-name-bar {
+    width: 100%;
+  }
+
+  .add-btn {
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 10%;
+  }
+
+  footer, .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-footer {
+    margin: 0 0 2.5rem 0;
+    align-items: center;
+  }
+  
+  .name-dedication {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-dedication {
+    font-size: 0.8rem;
+  }
+
+  .right-footer {
+    width: 80%;
+    margin: 0.5rem auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem 0.5rem 0 0;
+  }
+  
+  .handy-links-name {
+    font-size: 1.5rem;
+    align-content: center;
+  }
+  
+  .handy-links-list {
+    font-size: 0.8rem;
+  }
+ 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  
+  #burguer {
+    display: flex;
+    align-self: center;
+    color: var(--text-white)
+  }
+
+  .menu-link-buy {
+    display: flex;
+  }
+  
+  .btn-buy, .menu-bg {
+    display: none;
+  }
+
+  .carousel-inner {
+    display: flex;
+  }
+
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+    display: block;
+  }
+
+  .order-name-carousel, .inspiration-name-carousel, .contact-container-name, .title-feedback, .received-feedbacks {
+    font-size: 1.5rem;
+    width: 45%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem calc(80% / 3);
+  }
+
+  .img-wrapper {
+    height: 12rem;
+    margin: 0 0.2rem;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    height: 3.5rem;
+    width: 1.7rem;
+  }
+
+  .send-btn {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 10%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .feedback-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #feedback-form {
+    flex-direction: column;
+  }
+
+  #feedback-input, #feedback-name-bar {
+    width: 100%;
+  }
+
+  .add-btn {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 10%;
+  }
+
+  footer, .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-footer {
+    margin: 0 0 3rem 0;
+    align-items: center;
+  }
+  
+  .name-dedication {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-dedication {
+    font-size: 0.8rem;
+  }
+
+  .right-footer {
+    width: 80%;
+    margin: 0.5rem auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem 0.5rem 0 0;
+  }
+  
+  .handy-links-name {
+    font-size: 1.5rem;
+    align-content: center;
+  }
+  
+  .handy-links-list {
+    font-size: 0.8rem;
   }
 }
+
+@media (min-width: 992px) and (max-width: 1499.98px) { 
+  .menu-bg, .btn-buy {
+    display: none;
+  }
+  
+  .menu-link-buy {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    margin: 1rem;
+    list-style-type: none;
+  }
+
+  #burguer {
+    display: flex;
+    align-self: center;
+    color: var(--text-white)
+  }
+
+  .order-name-carousel, .inspiration-name-carousel, .contact-container-name, .title-feedback, .received-feedbacks {
+    font-size: 1.5rem;
+    width: 45%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem calc(80% / 3);
+  }
+
+  .send-btn {
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 10%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .feedback-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #feedback-form {
+    flex-direction: column;
+  }
+
+  #feedback-input, #feedback-name-bar {
+    width: 100%;
+  }
+
+  .add-btn {
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    width: 20%;
+    height: 10%;
+  }
+
+  footer, .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-footer {
+    margin: 0 0 4rem 0;
+    align-items: center;
+  }
+  
+  .name-dedication {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-dedication {
+    font-size: 0.8rem;
+  }
+
+  .right-footer {
+    width: 80%;
+    margin: 0.5rem auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem 0.5rem 0 0;
+  }
+  
+  .handy-links-name {
+    font-size: 1.5rem;
+    align-content: center;
+  }
+  
+  .handy-links-list {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .menu-bg {
+    display: flex;
+  }
+ }

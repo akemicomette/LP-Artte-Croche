@@ -1,30 +1,44 @@
-function moveCarousel(containerClass, nextButtonClass, prevButtonClass, imagesClass) {
-    const orderImages = document.querySelector(containerClass);
-    const ordersCount = document.querySelectorAll(imagesClass).length;
-    let ordersCurrentIndex = 0;
+$('.multiple-card-slider .carousel').each(function(){
+  var currentCarouselId = '#' + $(this).attr('id');
+  const multipleItemCarousel = document.querySelector(currentCarouselId);
+
+  if(window.matchMedia("(min-width:576px)").matches){
+    const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+        interval: false,
+        wrap: false
+    })
+    var carouselWidth = $(currentCarouselId + ' .carousel-inner')[0].scrollWidth;
+    var cardWidth = $(currentCarouselId + ' .carousel-item').width();
+    var scrollPosition = 0;
+    var maxScrollPosition = carouselWidth - (cardWidth * 3);
     
-    document.querySelector(nextButtonClass).addEventListener('click', () => {
-        if (ordersCurrentIndex < ordersCount - 1) {
-            ordersCurrentIndex++;
-        } else {
-            ordersCurrentIndex = 0;
-        }
-        updateCarousel();
+    $(currentCarouselId + ' .carousel-control-next').on('click', function(){
+      if(scrollPosition < carouselWidth - cardWidth * 3){
+          console.log('next');
+          scrollPosition = scrollPosition + cardWidth;
+      } else {
+        scrollPosition = 0;
+      }
+      $(currentCarouselId + ' .carousel-inner').animate(
+        {scrollLeft: scrollPosition},
+      600);
     });
-    
-    document.querySelector(prevButtonClass).addEventListener('click', () => {
-        if (ordersCurrentIndex > 0) {
-            ordersCurrentIndex--;
-        } else {
-            ordersCurrentIndex = ordersCount - 1;
-        }
-        updateCarousel();
+
+    $(currentCarouselId + ' .carousel-control-prev').on('click', function(){
+      if(scrollPosition > 0){
+          console.log('prev');
+          scrollPosition = scrollPosition - cardWidth;
+      } else {
+        scrollPosition = maxScrollPosition;
+      }
+      $(currentCarouselId + ' .carousel-inner').animate(
+        {scrollLeft: scrollPosition},
+      600);
     });
-    
-    function updateCarousel() {
-        orderImages.style.left = `${-ordersCurrentIndex * 20}%`;
-    }
-}
+  }else{
+      $(multipleItemCarousel).addClass('slide');
+  }
+});
 
 function clickMenu() {
     const menu = document.querySelector('#menu_bg');
@@ -35,5 +49,4 @@ function clickMenu() {
     }
 }
 
-moveCarousel('.inspiration-carousel-images','.inspiration-next-btn','.inspiration-prev-btn','.inspiration-img-intro');
 // clickMenu();

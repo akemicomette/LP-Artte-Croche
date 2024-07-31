@@ -1,0 +1,89 @@
+/* CARROSSEL ENCOMENDAS*/
+
+.order-name-carousel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: var(--bold-font);
+  color: var(--text-white);
+  width: 45%;
+  border: 0.15rem solid var(--background-color);
+  border-radius: 0.8rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem calc(80% / 3);
+}
+
+#order-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+/*CARROSSEL INPIRAÇÕES*/
+
+.inspiration-name-carousel {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: var(--bold-font);
+  color: var(--text-white);
+  width: 45%;
+  border: 0.15rem solid var(--background-color);
+  border-radius: 0.8rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem calc(80% / 3);
+}
+
+#inspiration-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+
+.carousel-inner {
+  display: flex;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  border: none;
+}
+
+.carousel-item {
+  display: block;
+  margin-right: 0.6rem;
+  flex: 0 0 calc(100%/3);
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 22rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  cursor: pointer;
+  color: var(--text-white);
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: none;
+  height: 4rem;
+  width: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  margin-left: 6%;
+}
+
+.carousel-control-next {
+  margin-right: 6%;
+}

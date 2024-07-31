@@ -11,7 +11,7 @@
 .contact-container-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  font-weight: var(--normal-font);
+  font-weight: var(--bold-font);
   color: var(--text-white);
   text-align: center;
   border: 0.1rem solid var(--text-white);
@@ -114,7 +114,7 @@
   color: var(--text-white);
   border: 0.02rem solid var(--secondary-color);
   border-radius: 0.7rem;
-  background-color: var(--primary-color);
+  background-color: var(--contrast-color);
   display: flex;
   justify-content: center;
   align-self: center;
